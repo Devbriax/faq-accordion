@@ -5,10 +5,7 @@
 }
 
 body {
-  width: 900;
-  max-width: 100%;
-  height: auto;
-  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-image: url('assets/images/background-pattern-desktop.svg');
 }
 
 /************************ END-MAIN-STYLES *********************/
@@ -19,7 +16,9 @@ body {
 
 #heading-text {}
 
-.question-panel {}
+div .question-panel {
+  display: flex;
+}
 
 .response-panel {}
 
