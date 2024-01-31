@@ -1,31 +1,35 @@
-/************************ MAIN-STYLES ****************************/
+/**** MAIN-STYLES ****/
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-image: url('assets/images/background-pattern-desktop.svg');
+/**** END-MAIN-STYLES ****/
+
+
+/**** BOX-STYLES ****/
+#main-wrapper {}
+
+#heading-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-/************************ END-MAIN-STYLES *********************/
-
-
-/************************ BOX-STYLES *********************/
-.main-container {}
-
-#heading-text {}
-
-div .question-panel {
-  display: flex;
+#main-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.response-panel {}
+#bottom-content {
+  padding-top: 25px;
+}
 
-/************************ END-BOX-STYLES *********************/
+/**** END-BOX-STYLES ****/
 
 
-/************************ FOOTER-STYLES *********************/
+/**** FOOTER-STYLES ****/
 footer.attribution {
   font-size: 11px;
   text-align: center;
@@ -35,8 +39,34 @@ footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-/************************ END-FOOTER-STYLES *********************/
+/**** END-FOOTER-STYLES ****/
 
+/** MEDIA QUERIES **/
+/*Mobile*/
+@media screen and (min-width: 375px) {
+  #main-wrapper {}
+
+  #heading-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  #main-content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #bottom-content {
+    padding-top: 25px;
+  }
+}
+
+/*Desktop*/
+@media screen and (max-width: 1440px) {}
+
+/**** END MEDIA QUERIES ****/
 
 /**** 
 
