@@ -1,4 +1,14 @@
 /**** MAIN-STYLES ****/
+:root {
+--color-1: hsl(0, 0%, 100%);  /** White **/
+--color-2:hsl(275, 100%, 97%); /** White **/
+--Grayish-purple: hsl(292, 16%, 49%); /** Grayish purple **/
+--Dark-purple: hsl(292, 42%, 14%);
+--Font-size-paragraphs:16px; 
+--Font-Family: [Work Sans](https: //fonts.google.com/specimen/Work+Sans);
+--Weights: 400, 600, 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +18,10 @@
 
 
 /**** BOX-STYLES ****/
-#main-wrapper {}
+#main-wrapper {
+  background-image: url('/assets/images/background-pattern-desktop.svg');
+  background-color: var(--color-2);
+}
 
 #heading-section {
   padding-top: 25px;
@@ -20,6 +33,10 @@
   padding-bottom: 25px;
   padding-right: 20px;
   padding-left: 20px;
+  background-color: var(--color-1);
+  border: 2px solid black;
+  border-radius: 3em;
+  width: 600px;
 }
 
 #bottom-content {
@@ -67,15 +84,3 @@ footer .attribution a {
 @media screen and (max-width: 1440px) {}
 
 /**** END MEDIA QUERIES ****/
-
-/**** 
-
-# Front-end Style Guide 
-## Layout The designs were created to the following widths: - Mobile: 375px - Desktop: 1440px 
-## Colors - White: hsl(0, 0%, 100%) - Light pink: hsl(275, 100%, 97%) - Grayish purple: hsl(292, 16%, 49%) - Dark purple: hsl(292, 42%, 14%) 
-## Typography 
-### Body Copy - Font size (paragraphs): 16px 
-### Font - Family: [Work Sans](https: //fonts.google.com/specimen/Work+Sans)
-  - Weights: 400, 600, 700
-
-****/
