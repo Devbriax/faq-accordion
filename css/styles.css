@@ -5,7 +5,7 @@
 --Grayish-purple: hsl(292, 16%, 49%); /** Grayish purple **/
 --Dark-purple: hsl(292, 42%, 14%);
 --Font-size-paragraphs:16px; 
---Font-Family: [Work Sans](https: //fonts.google.com/specimen/Work+Sans);
+--Font-Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans);
 --Weights: 400, 600, 700;
 }
 
@@ -14,13 +14,11 @@
   padding: 0;
 }
 
-/**** END-MAIN-STYLES ****/
-
-
 /**** BOX-STYLES ****/
-#main-wrapper {
-  background-image: url('/assets/images/background-pattern-desktop.svg');
+#container {
   background-color: var(--color-2);
+  display: grid;
+  place-items: center;
 }
 
 #heading-section {
@@ -43,11 +41,8 @@
   padding-top: 25px;
 }
 
-/**** END-BOX-STYLES ****/
-
-
 /**** FOOTER-STYLES ****/
-footer.attribution {
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
@@ -56,12 +51,10 @@ footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-/**** END-FOOTER-STYLES ****/
-
 /** MEDIA QUERIES **/
-/*Mobile*/
+/*Mobile
 @media screen and (min-width: 375px) {
-  #main-wrapper {}
+
 
   #heading-section {
     padding-top: 25px;
@@ -83,4 +76,3 @@ footer .attribution a {
 /*Desktop*/
 @media screen and (max-width: 1440px) {}
 
-/**** END MEDIA QUERIES ****/

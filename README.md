@@ -19,32 +19,26 @@ This is a solution to the
 
 ## Overview
 
-### The challenge
+## The challenge
 
-### Screenshot
+## Screenshot
 
 ### Links
+
 - Solution URL: (https://your-solution-url.com)
 - Live Site URL: (https://your-live-site-url.com)
 
-
 ## My process
-### Built with
-- Semantic HTML5 markup syntax. 
-- CSS custom properties
-- Flexbox
-- CSS Grid
 
-### What I learned
+## Built with
 
-### Continued development
+## What I learned
 
-### Useful resources
+## Continued development
+
+## Useful resources
 
 ## Author
+
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-## Acknowledgments
-
-
