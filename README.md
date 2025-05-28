@@ -25,7 +25,7 @@ This is a solution to the
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://devbriax.github.io/faq-accordion/)
 - Live Site URL: (https://your-live-site-url.com)
 
 ## My process
