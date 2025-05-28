@@ -7,6 +7,7 @@
     <meta name="description" content="Frontend Mentor FAQ Accordion Challenge">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
 
@@ -14,7 +15,7 @@
     <main id="container">
       <!-- Header -->
       <div class="banner-img">
-        <img src="assets/images/background-pattern-desktop.svg" alt="top-bg-img" width="" height="">
+        <img src="assets/images/background-pattern-desktop.svg" alt="top-bg-img" />
       </div>
       <!-- Main-section -->
       <div id="main-content">
@@ -22,53 +23,39 @@
           <img src="assets/images/icon-star.svg" alt="star-image" width="30px" height="30px">
           <h2>FAQs</h2>
         </div>
-        <div class="question-1">
-          <div class="question">
-            <p>
-              What is Frontend Mentor, and how will it help me?
-            </p>
-            <img src="assets/images/icon-plus.svg" alt="plus-image">
-          </div>
-          <p class="response">
+
+        <button type="button" class="collapsible">What is Frontend Mentor, and how will it help me?
+        </button>
+        <div class="content">
+          <p>
             "Frontend Mentor offers realistic coding challenges to help developers improve their
-            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            frontend coding skills with projects in HTML,CSS, and JavaScript. It's suitable for
             all levels and ideal for portfolio building."
           </p>
         </div>
-        <div class="question-2">
-          <div class="question">
-            <p>
-              Is Frontend Mentor free?
-            </p>
-            <img src="assets/images/icon-plus.svg" alt="plus-image">
-          </div>
-          <p class="response">
+        <button type="button" class="collapsible">Is Frontend Mentor free?
+        </button>
+        <div class="content">
+          <p>
             "Yes, Frontend Mentor offers both free and premium coding challenges, with the free
             option providing access to a range of projects suitable for all skill levels."
           </p>
         </div>
-        <div class="question-3">
-          <div class="question">
-            <p>
-              Can I use Frontend Mentor projects in my portfolio?
-            </p>
-            <img src="assets/images/icon-plus.svg" alt="plus-image">
-          </div>
-          <p class="response">
+        <button type="button" class="collapsible ">Can I use Frontend Mentor projects in my portfolio?
+
+        </button>
+        <div class="content">
+          <p>
             "Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
             way to showcase your skills to potential employers!"
           </p>
         </div>
-        <div class="question-4">
-          <div class="question">
-            <p>
-              How can I get help if I'm stuck on a Frontend Mentor challenge?
-            </p>
-            <img src="assets/images/icon-plus.svg" alt="plus-image">
-          </div>
-          <p class="response">
+        <button type="button" class="collapsible">How can I get help if I'm stuck on a Frontend Mentor challenge?
+        </button>
+        <div class="content">
+          <p>
             "The best place to get help is inside Frontend Mentor's Discord community. There's a help
-            channel where you can ask questions and seek support from other community members."
+            channel where you can ask contents and seek support from other community members."
           </p>
         </div>
       </div>
@@ -78,7 +65,7 @@
       <div class="attribution">
         <p>
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Your Name Here</a>.
+          Coded by <a href="#">Briax</a>.
         </p>
       </div>
     </footer>

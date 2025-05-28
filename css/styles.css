@@ -1,11 +1,13 @@
 /**** MAIN-STYLES ****/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 --color-1: hsl(0, 0%, 100%);  /** White **/
 --color-2:hsl(275, 100%, 97%); /** White **/
 --Grayish-purple: hsl(292, 16%, 49%); /** Grayish purple **/
 --Dark-purple: hsl(292, 42%, 14%);
 --Font-size-paragraphs:16px; 
---Font-Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans);
+--Font-Family: 'Work Sans', sans-serif; /** Font Family **/
 --Weights: 400, 600, 700;
 }
 
@@ -14,31 +16,66 @@
   padding: 0;
 }
 
+body {
+  font-family: var(--Font-Family);
+  font-weight: 600;
+}
+
 /**** BOX-STYLES ****/
 #container {
   background-color: var(--color-2);
-  display: grid;
-  place-items: center;
-}
-
-#heading-section {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 #main-content {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-  background-color: var(--color-1);
-  border: 2px solid black;
-  border-radius: 3em;
-  width: 600px;
+  border: 1px solid black;
+  width: 700px;
+  display: block;
+  padding: 1em;
+  margin: auto;
+  border-radius: 2em;
 }
 
 #bottom-content {
   padding-top: 25px;
+}
+
+.collapsible {
+  background-color: var(--color-2);
+  color: var(--Dark-purple);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.active, .collapsible:hover {
+  background-color: var(--Grayish-purple);
+  color: var(--color-1);
+}
+
+.collapsible:after {
+  content: url('assets/images/icon-plus.svg');
+  color: var(--Grayish-purple);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: url('assets/images/icon-minus.svg');
+  color: var(--Grayish-purple);
+}
+
+.content {
+  padding: 0 18px;
+  font-size: var(--Font-size-paragraphs);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 /**** FOOTER-STYLES ****/
@@ -52,27 +89,5 @@ footer .attribution a {
 }
 
 /** MEDIA QUERIES **/
-/*Mobile
-@media screen and (min-width: 375px) {
 
-
-  #heading-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  #main-content {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  #bottom-content {
-    padding-top: 25px;
-  }
-}
-
-/*Desktop*/
-@media screen and (max-width: 1440px) {}
 
